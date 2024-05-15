@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%; 
+  display: grid;
+  place-items: center;
+}
+/* fallback */
+@font-face {
+  font-family: Adihaus;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/adihausdin_regular.otf);
+}
+@font-face {
+  font-family: AdihausBold;
+  font-style: normal;
+  font-weight: 700;
+  src:url(../font/adihausdin_bold.otf);
+}
+.gray{
+  color: rgba(32, 32, 32, 0.473);
+}
+
+.adihaus{
+  font-family: Adihaus;  
+}
+.adihausbold{
+  font-family: AdihausBold;  
+}
+main{
+  background-image:url(../img/Zapatillas_Stan_Smith.avif);
+  background-size: 100%;
+  position: relative;
+  background-color: rgb(234, 238, 239);
+  border: solid;
+  display: flex;
+  width: 500px;
+  height: 60%;
+  flex-direction: column;
+  .primero{
+    width: 100%;
+    height: 80%;
+    & i{
+      font-size: 30px;
+      position: absolute;
+      right: 2%;
+     }
+     & i:hover{
+      transform: scale(1.1);
+      color: red;
+     } 
+     & p{
+      padding: 2%;
+      background-color:white;
+      position: absolute;
+      top: 65%;
+       }
+  }
+
+
+   .texto{
+    padding: 2%;
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+   }
+ 
+}
